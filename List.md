@@ -103,3 +103,48 @@ your_games = ["Fifa", "NBA", "Mortal Combat"]
 my_games.extend(your_games)
 ```
 
+## Removing element 
+
+There are multiple options for removing elements from a list
+
+### remove
+
+You can use remove() which removes the first occurance of the element.
+
+```python 
+my_games = ["GTA", "RED Dead", "Crash", "NBA", "GTA"]
+my_games.remove("GTA")
+```
+
+### pop
+
+You can also use pop() too. If you specify an index in the method then the index's element will be removed, and if not the last one will.
+
+```python
+my_games = ["GTA", "RED Dead", "Crash", "NBA", "GTA"]
+my_games.pop("GTA")
+my_games.pop()
+```
+
+### del
+
+Deleting the whole list or an index of the list.
+
+```python
+my_games = ["GTA", "RED Dead", "Crash", "NBA", "GTA"]
+# Only deletes the first element of the list
+del my_games[0]
+# Deletes the whole list
+del my_games
+```
+
+### Clear
+
+Wipes out the whole list.
+
+```python
+my_games = ["GTA", "RED Dead", "Crash", "NBA", "GTA"]
+my_games.clear()
+```
+
+## Sort
