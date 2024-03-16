@@ -148,3 +148,42 @@ my_games.clear()
 ```
 
 ## Sort
+
+You can use list default sort with sort()
+
+```python
+my_games = ["GTA", "RED Dead", "Crash", "NBA", "GTA"]
+my_games.sort()
+print(my_games)
+```
+__Note:__ This method changes the default order of the list.
+
+### Reversed sorting
+
+```python
+my_games = ["GTA", "RED Dead", "Crash", "NBA", "GTA"]
+my_games.sort(reversed = True)
+print(my_games)
+```
+
+### Cutomized Sort
+
+If you don't like the default sorting, then you can use your own like this:
+
+```python
+def my_sorter(n):
+  return abs(n * 2)
+numbers = [312, 12, 32, 12, 32, 12, -5]
+numbers.sort(key = my_sorter)
+print(numbers)
+```
+
+## Reversing
+
+reverse() does the job.
+
+```python
+numbers = [312, 12, 32, 12, 32, 12, -5]
+numbers.reverse()
+print(numbers)
+```
